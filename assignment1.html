@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Music Library</title>
+    <style>
+        .hovereditems a:hover{
+            background-color: #635f5f; 
+            color: #007bff;
+        }
+        .mt-navbar {
+            margin-top: 100px; /* Adjust this value based on your navbar height */
+        }
+        body {
+            background-image: url('./pixlr-image-generator-a4b12888-2740-4713-8d5a-9a515a29b706.png');
+            background-size: cover; /* Cover the entire background */
+            background-repeat: no-repeat; /* Do not repeat the background image */
+            background-position: center;
+             /* Center the background image */
+            /* Add additional styles as needed */
+        }
+        
+    </style>
+</head>
+<body>
+  <div class="backgroundimage">
+    <nav class="navbar fixed-top bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><svg  xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor" class="bi bi-file-earmark-music-fill" viewBox="0 0 16 16">
+            <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M11 6.64v1.75l-2 .5v3.61c0 .495-.301.883-.662 1.123C7.974 13.866 7.499 14 7 14s-.974-.134-1.338-.377C5.302 13.383 5 12.995 5 12.5s.301-.883.662-1.123C6.026 11.134 6.501 11 7 11c.356 0 .7.068 1 .196V6.89a1 1 0 0 1 .757-.97l1-.25A1 1 0 0 1 11 6.64"/>
+          </svg> Music Library</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 hovereditems">
+              <li class="nav-item" >
+                <a class="nav-link active" aria-current="page" href="#" >Home</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li> -->
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li> -->
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li> -->
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-white btn-dark " type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container text-center mt-navbar">
+        <div class="row align-items-center">
+          <div class="col md-6">
+
+            <div class="h-100 p-5 text-bg-dark rounded-3">
+              <h2>ECHOvironment</h2>
+              <p>Immerse yourself in a world where every echo creates an unforgettable environment.</p>
+              <button class="btn btn-outline-light" type="button">Featured Playlists</button>
+            </div>
+
+          </div>
+          <div class="col md-6">
+            <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" fill="currentColor" class="bi bi-vinyl" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+              <path d="M8 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4M4 8a4 4 0 1 1 8 0 4 4 0 0 1-8 0"/>
+              <path d="M9 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- featured playlist -->
+      <div class="container mt-5">
+        <h1>Featured Playlists</h1>
+        <div class="row align-items-center">
+          <div class="col d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+              <img src="https://m.media-amazon.com/images/I/41T7+sS0SDL._AC_UF1000,1000_QL80_.jpg" height="340" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Arijit Singh</h5>
+                <p class="card-text">Some heart touching songs bt Arijit Singh that will melt your hear</p>
+                <a href="#" class="btn btn-dark">Explore</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+              <img src="https://cdn.britannica.com/13/222713-050-ECDEDACE/Taylor-Swift-2019-Jingle-Ball.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Taylor Swift</h5>
+                <p class="card-text">People's favourite songs from the tour of the infamous Taylor Swift</p>
+                <a href="#" class="btn btn-dark">Explore</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+              <img src="https://cdn.britannica.com/17/249617-050-4575AB4C/Ed-Sheeran-performs-Rockefeller-Plaza-Today-Show-New-York-2023.jpg" height="310" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">ED Shreen</h5>
+                <p class="card-text">Discover the heartfelt melodies and captivating storytelling in Ed Sheeran's eclectic playlist</p>
+                <a href="#" class="btn btn-dark">Explore</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="container">
+          <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+              
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+            </ul>
+            <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
+          </footer>
+        </div>
+      </div>
+</body>
+</html>
